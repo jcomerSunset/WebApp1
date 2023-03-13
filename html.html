@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+</head>
+<body>
+
+    <h1>Contact</h1>
+
+    <form action="actionJS.js" method="post">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+
+        <label for="priority">Priority</label>
+        <select id="priority" name="priority">
+            <option value="1">Low</option>
+            <option value="2" selected>Medium</option>
+            <option value="3">High</option>
+        </select>
+
+        <fieldset>
+            <legend>Type</legend>
+
+            <label>
+                <input type="radio" name="type" value="1" checked>
+                Complaint
+            </label>
+
+            <br>
+
+            <label>
+                <input type="radio" name="type" value="2">
+                Suggestion
+            </label>
+
+        </fieldset>
+
+        <label>
+            <input type="checkbox" name="terms">
+            I agree to the terms and conditions
+        </label>
+
+        <br>
+        <p><input type="submit" /></p>
+
+
+
+    </form>
+	
+	<script type="module">
+
+  // Import the functions you need from the SDKs you need
+
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-analytics.js";
+
+  // TODO: Add SDKs for Firebase products that you want to use
+
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+
+  // Your web app's Firebase configuration
+
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+  const firebaseConfig = {
+
+    apiKey: "AIzaSyDSnWRdGi3Ciym53X8egqsFKZsoMw3MjDw",
+
+    authDomain: "fourth-project-a5d5f.firebaseapp.com",
+
+    projectId: "fourth-project-a5d5f",
+
+    storageBucket: "fourth-project-a5d5f.appspot.com",
+
+    messagingSenderId: "4739771399",
+
+    appId: "1:4739771399:web:77fe09b12a79286e358ea2",
+
+    measurementId: "G-ZYN2S1MQXE"
+
+  };
+
+
+  // Initialize Firebase
+
+  const app = initializeApp(firebaseConfig);
+
+  const analytics = getAnalytics(app);
+
+</script>
+
+</body>
+</html>
